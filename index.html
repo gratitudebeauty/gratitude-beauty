@@ -9,10 +9,10 @@
 <title>Gratitude Beauty &#10022; Japanese Health &amp; Beauty </title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400i,700">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
-<body>
+<body class="gradient">
     <div id="container">
         <header>
             <a href="http://gratitudebeauty.ca"><img src="img/gratitude-beauty-logo.png" alt="Gratitude Beauty Logo"></a>
@@ -39,6 +39,17 @@
         </div>
         <div id="about">
             <h3>We are beauty professionals who help Calgarians make their lives richer and happier with professional beauty and relaxation services.</h3>
+            <div id="reviews" class="grid">
+                <div id="stars" class="unit whole align-center">
+                    <i class="material-icons gold">star</i>
+                    <i class="material-icons gold">star</i>
+                    <i class="material-icons gold">star</i>
+                    <i class="material-icons gold">star</i>
+                    <i class="material-icons gold">star</i>
+                    <h3 id="review"></h3>
+                    <p>&mdash; <a id="review-link" href="#"></a></p>
+                </div>
+            </div>
         </div>
         <div id="gallery" class="gradient">
         </div>
@@ -66,12 +77,12 @@
                         <li>Sunday</li>
                     </ul>
                     <ul>
-                        <li>9am &ndash; 8pm</li>
-                        <li>9am &ndash; 8pm</li>
-                        <li>9am &ndash; 8pm</li>
-                        <li>9am &ndash; 8pm</li>
-                        <li>9am &ndash; 8pm</li>
-                        <li>10am &ndash; 6pm</li>
+                        <li>10am &ndash; 8pm</li>
+                        <li>9:30am &ndash; 8pm</li>
+                        <li>9:30am &ndash; 8pm</li>
+                        <li>9:30am &ndash; 8pm</li>
+                        <li>9:30am &ndash; 8pm</li>
+                        <li>10am &ndash; 5:30pm</li>
                         <li>Closed</li>
                     </ul>
                 </div>
@@ -85,10 +96,7 @@
         </div>
         <footer>Copyright &copy; <span id="year"></span> Gratitude Beauty</footer>
     </div>
-<script>
-    var date = new Date();
-    var year = date.getFullYear();
-    document.getElementById('year').innerHTML = year;
-</script>
+<script src="js/site.js"></script>
+<!-- <script>window.onload = function () { getReviews(); }</script> -->
 </body>
 </html>

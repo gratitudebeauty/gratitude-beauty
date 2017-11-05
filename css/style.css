@@ -42,8 +42,8 @@ table {
 html, body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1em;
-    margin: 6px;
-    padding: 0;
+    margin: 0;
+    padding: 4px;
     line-height: 1.5;
     color: rgba(16, 16, 16, 0.88);
     -webkit-font-rendering: antialiased;
@@ -56,7 +56,8 @@ body {
 
 #container {
     background: #fff;
-    border-radius: 6px;
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
@@ -188,6 +189,17 @@ header #social {
     text-shadow: none;
 }
 
+.material-icons.gold {
+    background: -moz-linear-gradient(0deg, #e5d081 0%, #aa7d2a 100%);
+    background: -webkit-linear-gradient(0deg, #e5d081 0%, #aa7d2a 100%);
+    background: -ms-linear-gradient(0deg, #e5d081 0%, #aa7d2a 100%);
+    background: linear-gradient(to right, #e5d081 0%, #aa7d2a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
 #about, #closing, #contact {
     padding: 4em 2em;
 }
@@ -199,8 +211,42 @@ header #social {
     margin: 0 auto;
 }
 
+#reviews {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#reviews h3 {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    color: rgba(16, 16, 16, 0.7);
+    padding: 0.750em 0;
+}
+
+#reviews p {
+    color: rgba(16, 16, 16, 0.5);
+    font-size: 0.750em;
+}
+
+#reviews a {
+    border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+    padding-bottom: 0.25em;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+#reviews a:hover {
+    color: rgba(16, 16, 16, 0.7);
+    border-bottom: 1px solid rgba(16, 16, 16, 0.4);
+    transition: all 0.3s;
+}
+
 #gallery {
-    height: 300px;
+    height: 360px;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .15);
+    /*transform: skewY(5deg);*/
 }
 
 #closing h4 {
@@ -279,6 +325,11 @@ footer {
 
 .grid .whole {
     width: 100%;
+    padding: 2em 2em 0 2em;
+}
+
+.grid .align-center {
+    text-align: center;
 }
 
 .grid .half {
@@ -330,7 +381,7 @@ footer {
     header img {
         height: 40px;
     }
-    header, #hero-text {
+    header, #hero-text, .grid .whole {
         padding: 1.125em;
     }
     #hero-text {
@@ -392,6 +443,9 @@ footer {
         max-width: none;
         font-size: 1.250em;
     }
+    #reviews h3 {
+        font-size: 0.875em;
+    }
     .card {
         font-size: 0.875em;
         height: 260px;
@@ -417,7 +471,7 @@ footer {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    #about, #closing, #contact {
+    #about, #closing, #contact, .grid .whole {
         padding: 1.125em;
     }
     #contact h5, .grid .half:first-child {
@@ -433,11 +487,11 @@ footer {
     #hero-text h1 {
         font-size: 1.5em;
     }
-    #hero-text h2 {
-        font-size: 0.875em;
-    }
     #about h3, #closing h4 {
         font-size: 1em;
+    }
+    #hero-text h2, #reviews h3 {
+        font-size: 0.875em;
     }
     footer {
         padding: 1.125em 1.125em 2.6667em 1.125em;
