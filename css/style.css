@@ -133,7 +133,7 @@ header #social {
     font-family: 'Bitter', serif;
     font-size: 3em;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     white-space: pre-line;
     line-height: 1.1;
 }
@@ -321,12 +321,12 @@ footer {
         min-width: 0;
         width: auto;
     }
-    #hero-text .book-online .options .btn {
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 37.5em) {
+    html, body {
+        margin: 0;
+    }
     header img {
         height: 40px;
     }
@@ -343,7 +343,7 @@ footer {
         font-size: 2em;
     }
     #hero-text h2 {
-        font-size: 0.875em;
+        font-size: 1em;
     }
     #hero-text .options {
         max-width: none;
@@ -351,8 +351,8 @@ footer {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
         -webkit-align-items: center;
         align-items: center;
     }
@@ -361,6 +361,7 @@ footer {
         border: 0;
         padding: 0.75em 1em;
         border-radius: 100px;
+        margin-left: 0.75em;
     }
     #closing .options {
         max-width: 150px;
@@ -376,7 +377,7 @@ footer {
         font-size: 0.813em;
     }
     #about, #closing, #contact {
-        padding: 1.250em;
+        padding: 1.5em;
     }
     #closing .book-online {
         padding-top: 1.250em;
@@ -387,12 +388,9 @@ footer {
     #contact {
         padding-top: 0;
     }
-    #about h3 {
+    #about h3, #closing h4 {
         max-width: none;
-        font-size: 1em;
-    }
-    #closing h4 {
-        font-size: 1em;
+        font-size: 1.250em;
     }
     .card {
         font-size: 0.875em;
@@ -427,19 +425,19 @@ footer {
     }
     #hero-text .book-online .options .btn, #hero-text .options a.telephone {
         width: 100%;
+        margin: 0;
     }
     #hero-text .options a.telephone {
         margin-top: 1em;
     }
     #hero-text h1 {
         font-size: 1.5em;
-        letter-spacing: -1px;
     }
     #hero-text h2 {
-        font-size: 0.813em;
+        font-size: 0.875em;
     }
     #about h3, #closing h4 {
-        font-size: 0.938em;
+        font-size: 1em;
     }
     footer {
         padding: 1.125em 1.125em 2.6667em 1.125em;
