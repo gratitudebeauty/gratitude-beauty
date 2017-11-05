@@ -61,8 +61,11 @@ body {
 }
 
 strong {
-    color: #c19344;
     font-weight: 700;
+}
+
+.goldy {
+    color: #c19344;
 }
 
 a {
@@ -201,6 +204,14 @@ header #social {
 
 #about, #closing, #contact {
     padding: 4em 2em;
+}
+
+.content {
+    padding: 2em;
+}
+
+.content p {
+    white-space: pre-line;
 }
 
 #about h3 {
