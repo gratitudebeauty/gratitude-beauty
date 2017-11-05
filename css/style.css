@@ -58,12 +58,11 @@ body {
     background: #fff;
     border-radius: 6px;
     overflow: hidden;
-    /*padding: 2em;*/
 }
 
 strong {
     color: #c19344;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 a {
@@ -77,6 +76,8 @@ a.telephone {
     border-bottom: 1px solid rgba(16, 16, 16, 0.2);
     padding: 0.25em 0;
     transition: all 0.3s;
+    margin: 0.25em 0;
+    display: inline-block;
 }
 
 a.telephone:hover {
@@ -84,11 +85,6 @@ a.telephone:hover {
     border-bottom: 1px solid rgba(16, 16, 16, 0.4);
     transition: all 0.3s;
 }
-
-/*.wrapper {
-    max-width: 1080px;
-    margin: 0 auto;
-}*/
 
 header {
     display: -moz-box;
@@ -147,6 +143,8 @@ header #social {
     line-height: 1.5;
     padding: 1em 0;
     white-space: pre-line;
+    min-width: 400px;
+    width: 33.3332%;
 }
 
 #hero-text .options, #closing .options {
@@ -173,16 +171,6 @@ header #social {
     background: -webkit-linear-gradient(0deg, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
     background: -ms-linear-gradient(0deg, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
     background: linear-gradient(to right, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
-}
-
-.divider {
-    background: -moz-linear-gradient(0deg, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
-    background: -webkit-linear-gradient(0deg, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
-    background: -ms-linear-gradient(0deg, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
-    background: linear-gradient(to bottom, #e5d081 0%, #aa7d2a 50%, #6e4905 100%);
-    height: auto;
-    width: 4px;
-    border-radius: 6px;
 }
 
 .btn:hover {
@@ -220,6 +208,8 @@ header #social {
     text-align: center;
     margin: 0 auto;
     white-space: pre-line;
+    min-width: 400px;
+    width: 40%;
 }
 
 #closing .book-online {
@@ -230,25 +220,18 @@ header #social {
 
 #contact {
     padding-top: 0;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-around;
 }
 
 #contact h5 {
-    font-weight: 500;
     text-align: center;
     padding-bottom: 2em;
     text-transform: uppercase;
 }
 
 .card {
-    width: 500px;
     height: 300px;
     padding: 1em;
-    margin-bottom: 3em;
+    margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0 2px 36px rgba(0, 0, 0, 0.1);
     display: -moz-box;
@@ -282,4 +265,183 @@ footer {
     padding-bottom: 2.6667em;
     font-size: 0.750em;
     color: rgba(16, 16, 16, 0.5);
+}
+
+.grid {
+    display: block;
+    clear: both;
+}
+
+.grid .unit {
+    float: left;
+    width: 100%;
+}
+
+.grid .whole {
+    width: 100%;
+}
+
+.grid .half {
+    width: 50%;
+    padding: 0 2em;
+}
+
+.grid .one-third {
+    width: 33.3332%;
+}
+
+.grid .one-quarter {
+    width: 25%;
+}
+
+.grid:before, .grid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.grid:after {
+    clear: both;
+}
+
+@media screen and (max-width: 48em) {
+    #about h3 {
+        max-width: 85%;
+    }
+    #closing h4 {
+        width: auto;
+    }
+    header #social {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 46em) {
+    #hero-text h2, #closing h4 {
+        min-width: 0;
+        width: auto;
+    }
+    #hero-text .book-online .options .btn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    header img {
+        height: 40px;
+    }
+    header, #hero-text {
+        padding: 1.125em;
+    }
+    #hero-text {
+        padding-top: 0;
+    }
+    header nav {
+        display: none;
+    }
+    #hero-text h1 {
+        font-size: 2em;
+    }
+    #hero-text h2 {
+        font-size: 0.875em;
+    }
+    #hero-text .options {
+        max-width: none;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    #hero-text .options a.telephone {
+        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1);
+        border: 0;
+        padding: 0.75em 1em;
+        border-radius: 100px;
+    }
+    #closing .options {
+        max-width: 150px;
+    }
+    #closing .options a.telephone {
+        margin-top: 0.5em;
+        display: inline-block;
+    }
+    .material-icons {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 0.813em;
+    }
+    #about, #closing, #contact {
+        padding: 1.250em;
+    }
+    #closing .book-online {
+        padding-top: 1.250em;
+    }
+    #contact h5 {
+        padding-bottom: 1.250em;
+    }
+    #contact {
+        padding-top: 0;
+    }
+    #about h3 {
+        max-width: none;
+        font-size: 1em;
+    }
+    #closing h4 {
+        font-size: 1em;
+    }
+    .card {
+        font-size: 0.875em;
+        height: 260px;
+    }
+    .grid .half {
+        width: 100%;
+        padding: 0;
+    }
+    .grid .half:first-child {
+        padding-top: 0;
+        padding-bottom: 1.250em;
+    }
+    .grid .half:last-child {
+        padding-bottom: 0;
+    }
+    footer {
+        padding-top: 1.250em;
+    }
+}
+
+@media screen and (max-width: 22em) {
+    #hero-text .options {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    #about, #closing, #contact {
+        padding: 1.125em;
+    }
+    #contact h5, .grid .half:first-child {
+        padding-bottom: 1.125em;
+    }
+    #hero-text .book-online .options .btn, #hero-text .options a.telephone {
+        width: 100%;
+    }
+    #hero-text .options a.telephone {
+        margin-top: 1em;
+    }
+    #hero-text h1 {
+        font-size: 1.5em;
+        letter-spacing: -1px;
+    }
+    #hero-text h2 {
+        font-size: 0.813em;
+    }
+    #about h3, #closing h4 {
+        font-size: 0.938em;
+    }
+    footer {
+        padding: 1.125em 1.125em 2.6667em 1.125em;
+    }
 }
