@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400i,700">
-<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/style.min.css" type="text/css" />
 </head>
 <body class="gradient">
     <div id="container">
@@ -52,6 +52,8 @@
             </div>
         </div>
         <div id="gallery" class="gradient">
+            <h3><i class="material-icons">camera_enhance</i> Latest from our Instagram <a href="https://www.instagram.com/gratitudebeautyyyc">@gratitudebeautyyyc</a></h3>
+            <div id="instafeed"></div>
         </div>
         <div id="closing">
             <h4>We only use high quality products. Your satisfaction and happy experiences are guaranteed with our services. It is our top priority!
@@ -96,7 +98,11 @@
         </div>
         <footer>Copyright &copy; <span id="year"></span> Gratitude Beauty</footer>
     </div>
-<script src="js/site.js"></script>
-<!-- <script>window.onload = function () { getReviews(); }</script> -->
+<script src="js/site.min.js"></script>
+<script src="js/instafeed.min.js"></script>
+<script>
+var feed = new Instafeed({get: 'user', userId: '4468612613', clientId: '43615ef3b9134adba22962011a0f205d', accessToken: '4468612613.1677ed0.4d0b7f7f96fa43039a5c88c815e11172', limit: 10, resolution: 'low_resolution', template: '<a class="instagram" href="{{link}}"><img src="{{image}}" alt="{{id}}"/></a>'});
+feed.run();
+</script>
 </body>
 </html>
