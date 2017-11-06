@@ -28,11 +28,11 @@
             <h1>Services</h1>
             <h2 class="no-bottom-padding">Please note that prices <strong>do not</strong> include GST. All prices are subject to change. Select a service to view pricing.</h2>
             <div class="custom-select">
-                <select>
-                    <option disabled selected>Select Service</option>
+                <select id="services">
+                    <option disabled selected>Select a Service</option>
                     <option value="lashes">Lashes</option>
-                    <option value="nails">Nails</option>
                     <option value="makeup">Permanent Makeup</option>
+                    <option value="nails">Nails</option>
                     <option value="brows">Brows</option>
                     <option value="facial">Facial</option>
                     <option value="massage">Massage</option>
@@ -42,161 +42,187 @@
         </div>
         <div class="content">
             <!-- LASHES -->
-            <h1><strong class="goldy">Lashes</strong></h1>
-            <!-- SINGLE LASHES -->
-            <table>
-                <th>Single Lashes</th>
-                <tr>
-                    <td>Full Set</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>2 Week Fill</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>3 Week Fill</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <td>4 Week Fill</td>
-                    <td>55</td>
-                </tr>
-                <tr>
-                    <td>5 Week Fill</td>
-                    <td>65</td>
-                </tr>
-            </table>
-            <!-- 2D VOLUME LASHES -->
-            <table>
-                <th>2D Volume Lashes</th>
-                <tr>
-                    <td>Full Set</td>
-                    <td>110</td>
-                </tr>
-                <tr>
-                    <td>2 Week Fill</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <td>3 Week Fill</td>
-                    <td>55</td>
-                </tr>
-                <tr>
-                    <td>4 Week Fill</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>5 Week Fill</td>
-                    <td>75</td>
-                </tr>
-                <tr>
-                    <td>6 Week Fill</td>
-                    <td>85</td>
-                </tr>
-            </table>
-            <!-- 3D VOLUME LASHES -->
-            <table>
-                <th>3D Volume Lashes</th>
-                <tr>
-                    <td>Full Set</td>
-                    <td>130</td>
-                </tr>
-                <tr>
-                    <td>2 Week Fill</td>
-                    <td>55</td>
-                </tr>
-                <tr>
-                    <td>3 Week Fill</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>4 Week Fill</td>
-                    <td>75</td>
-                </tr>
-                <tr>
-                    <td>5 Week Fill</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>6 Week Fill</td>
-                    <td>95</td>
-                </tr>
-            </table>
-            <!-- 4-6D VOLUME LASHES -->
-            <table>
-                <th>4-6D Volume Lashes</th>
-                <tr>
-                    <td>Full Set</td>
-                    <td>160</td>
-                </tr>
-                <tr>
-                    <td>2 Week Fill</td>
-                    <td>70</td>
-                </tr>
-                <tr>
-                    <td>3 Week Fill</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>4 Week Fill</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>5 Week Fill</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>6 Week Fill</td>
-                    <td>110</td>
-                </tr>
-            </table>
-            <!-- OTHER LASHES -->
-            <table>
-                <th>Other Lash Services</th>
-                <tr>
-                    <td>Lash Shampoo</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Lash Removal</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Bottom Lash Extensions</td>
-                    <td>15-30</td>
-                </tr>
-                <tr>
-                    <td>Lash Tint</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Japanse Upward Lash</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Lash Perm/Lift</td>
-                    <td>55</td>
-                </tr>
-            </table>
+            <h1 id="lashes"><strong class="goldy">Lashes</strong></h1>
+            <div class="grid">
+                <!-- SINGLE LASHES -->
+                <div class="unit half no-left-padding">
+                    <table>
+                        <tr>
+                            <th>Single Lashes</th>
+                        </tr>
+                        <tr>
+                            <td>Full Set</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>2 Week Fill</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>3 Week Fill</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>4 Week Fill</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>5 Week Fill</td>
+                            <td>65</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 2D VOLUME LASHES -->
+                <div class="unit half no-right-padding">
+                    <table>
+                        <tr>
+                            <th>2D Volume Lashes</th>
+                        </tr>
+                        <tr>
+                            <td>Full Set</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>2 Week Fill</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>3 Week Fill</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>4 Week Fill</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>5 Week Fill</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>6 Week Fill</td>
+                            <td>85</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 3D VOLUME LASHES -->
+                <div class="unit half no-left-padding">
+                    <table>
+                        <tr>
+                            <th>3D Volume Lashes</th>
+                        </tr>
+                        <tr>
+                            <td>Full Set</td>
+                            <td>130</td>
+                        </tr>
+                        <tr>
+                            <td>2 Week Fill</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>3 Week Fill</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>4 Week Fill</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>5 Week Fill</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>6 Week Fill</td>
+                            <td>95</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 4-6D VOLUME LASHES -->
+                <div class="unit half no-right-padding">
+                    <table>
+                        <tr>
+                            <th>4-6D Volume Lashes</th>
+                        </tr>
+                        <tr>
+                            <td>Full Set</td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>2 Week Fill</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>3 Week Fill</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>4 Week Fill</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>5 Week Fill</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>6 Week Fill</td>
+                            <td>110</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- OTHER LASHES -->
+                <table>
+                    <tr>
+                        <th>Other Lash Services</th>
+                    </tr>
+                    <tr>
+                        <td>Lash Shampoo</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Lash Removal</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Bottom Lash Extensions</td>
+                        <td>15-30</td>
+                    </tr>
+                    <tr>
+                        <td>Lash Tint</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Japanse Upward Lash</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Lash Perm/Lift</td>
+                        <td>55</td>
+                    </tr>
+                </table>
+            </div>
             <!-- PERMANENT MAKEUP -->
-            <h1><strong class="goldy">Permanent Makeup</strong></h1>
+            <h1 id="makeup"><strong class="goldy">Permanent Makeup</strong></h1>
             <table>
-                <th>Eyebrow Microblading</th>
+                <tr>
+                    <th>Eyebrow Microblading</th>
+                </tr>
                 <tr>
                     <td>Includes 1 touchup</td>
                     <td>500</td>
                 </tr>
             </table>
             <table>
-                <th>Eyebrow Powder Look</th>
+                <tr>
+                    <th>Eyebrow Powder Look</th>
+                </tr>
                 <tr>
                     <td>Includes 1 touchup</td>
                     <td>400</td>
                 </tr>
             </table>
             <table>
-                <th>Eyeliner Tattoo Top</th>
+                <tr>
+                    <th>Eyeliner Tattoo Top</th>
+                </tr>
                 <tr>
                     <td>Done naturally in the lash base</td>
                     <td>300</td>
@@ -220,8 +246,105 @@
                     <td>FREE</td>
                 </tr>
             </table>
+            <div class="grid">
+                <div class="unit half no-left-padding">
+                    <!-- NAILS -->
+                    <h1 id="nails"><strong class="goldy">Nails</strong></h1>
+                    <table>
+                        <tr>
+                            <td><strong>Manicure</strong></td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Manicure + Polish</strong></td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Manicure + Gel Polish</strong></td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gel Overlay (Soak Off Gel or Hard Gel)</strong></td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tip Overlay</strong></td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sculpted Gel Extensions (Soak Off Gel or Hard Gel)</strong></td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gel Fill (Only for Hard Gel)</strong></td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Repair (Up to 2 Nails)</strong></td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gel Polish Removal</strong></td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gel Set Removal</strong></td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="unit half no-right-padding">
+                    <h1><strong class="goldy">Nails Art</strong></h1>
+                    <table>
+                        <tr>
+                            <td><strong>Nail Design Art (Per Nail)</strong></td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>French Nail</strong></td>
+                            <td>+10</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fade (Gradation)</strong></td>
+                            <td>+10</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mirror (Chrome) Nail</strong></td>
+                            <td>+10</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Foil Nail</strong></td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3D Design by V Cut Stones (Per Nail)</strong></td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Swarvoski Stone</strong></td>
+                            <td>0.50-1</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pearl (S) (Per Piece)</strong></td>
+                            <td>0.25</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pearl (L) (Per Piece)</strong></td>
+                            <td>0.50</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Metal (S) (Per Piece)</strong></td>
+                            <td>0.25</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Metal (L) (Per Piece)</strong></td>
+                            <td>0.50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <!-- BROWS -->
-            <h1><strong class="goldy">Brows</strong></h1>
+            <h1 id="brows"><strong class="goldy">Brows</strong></h1>
             <table>
                 <tr>
                     <td><strong>Brow Shaping</strong></td>
@@ -235,7 +358,7 @@
                 </tr>
             </table>
             <!-- JAPANESE FACIALS -->
-            <h1><strong class="goldy">Japanese Facials</strong></h1>
+            <h1 id="facial"><strong class="goldy">Japanese Facials</strong></h1>
             <table>
                 <tr>
                     <td><strong>Japanese Basic Cleansing</strong></td>
@@ -249,7 +372,7 @@
                 </tr>
             </table>
             <!-- JAPANESE HEAD MASSAGE -->
-            <h1><strong class="goldy">Japanese Head Massage</strong></h1>
+            <h1 id="massage"><strong class="goldy">Japanese Head Massage</strong></h1>
             <table>
                 <tr>
                     <td><strong>20 Minutes</strong></td>
@@ -264,5 +387,10 @@
             </table>
         </div>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var serviceType = document.getElementById('services');
+serviceType.onchange=function(){"lashes"===serviceType.value?$("html, body").animate({scrollTop:$("#lashes").offset().top}):"makeup"===serviceType.value?$("html, body").animate({scrollTop:$("#makeup").offset().top}):"nails"===serviceType.value?$("html, body").animate({scrollTop:$("#nails").offset().top}):"brows"===serviceType.value?$("html, body").animate({scrollTop:$("#brows").offset().top}):"facial"===serviceType.value?$("html, body").animate({scrollTop:$("#facial").offset().top}):"massage"===serviceType.value&&$("html, body").animate({scrollTop:$("#massage").offset().top})};
+</script>
 </body>
 </html>

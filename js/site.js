@@ -7,53 +7,53 @@ document.getElementById('year').innerHTML = year;
 var reviewsArray = [];
 var siteReviews = {
     "reviews": [{
-            "review": "I would highly recommend Gratitude Beauty to anyone who is looking for, or has eyelash extensions.",
+            "review": "“I would highly recommend Gratitude Beauty to anyone who is looking for, or has eyelash extensions.”",
             "source": "Google",
             "link": "https://www.google.ca/search?q=Gratitude+Beauty+-Eyelash+extensions,+Facials,+Permanent+make-up,+3630+Brentwood+Rd+NW+%23232C+Calgary,+AB+T2L+1K8&ludocid=13789624131299997506&gws_rd=cr&dcr=0&ei=4VH_WfK8HcnYjwOb7J2IAQ#gws_rd=cr&lrd=0x53716f0d5888de3b:0xbf5e96163c4a7742,1"
 
         },
         {
-            "review": "The eyelash technicians are absolutely amazing. You fall asleep and have a restful nap then wake up with beautiful lashes. They go out of their way to make the experience wonderful.",
+            "review": "“The eyelash technicians are absolutely amazing. You fall asleep and have a restful nap then wake up with beautiful lashes. They go out of their way to make the experience wonderful.”",
             "source": "Google",
             "link": "https://www.google.ca/search?q=Gratitude+Beauty+-Eyelash+extensions,+Facials,+Permanent+make-up,+3630+Brentwood+Rd+NW+%23232C+Calgary,+AB+T2L+1K8&ludocid=13789624131299997506&gws_rd=cr&dcr=0&ei=4VH_WfK8HcnYjwOb7J2IAQ#gws_rd=cr&lrd=0x53716f0d5888de3b:0xbf5e96163c4a7742,1"
         },
         {
-            "review": "I highly recommend them. I got top and bottom eyelash extensions, as well as my nails done. I am very happy with their work. The staff was also friendly, polite, and professional. I would give them more stars if I could.",
+            "review": "“I highly recommend them. I got top and bottom eyelash extensions, as well as my nails done. I am very happy with their work. The staff was also friendly, polite, and professional. I would give them more stars if I could.”",
             "source": "Google",
             "link": "https://www.google.ca/search?q=Gratitude+Beauty+-Eyelash+extensions,+Facials,+Permanent+make-up,+3630+Brentwood+Rd+NW+%23232C+Calgary,+AB+T2L+1K8&ludocid=13789624131299997506&gws_rd=cr&dcr=0&ei=4VH_WfK8HcnYjwOb7J2IAQ#gws_rd=cr&lrd=0x53716f0d5888de3b:0xbf5e96163c4a7742,1"
         },
         {
-            "review": "Gratitude Beauty is amazing. It is clean, honest and professional. I have been getting my eyelashes done here since it opened and will never go anywhere else!",
+            "review": "“Gratitude Beauty is amazing. It is clean, honest and professional. I have been getting my eyelashes done here since it opened and will never go anywhere else!”",
             "source": "Google",
             "link": "https://www.google.ca/search?q=Gratitude+Beauty+-Eyelash+extensions,+Facials,+Permanent+make-up,+3630+Brentwood+Rd+NW+%23232C+Calgary,+AB+T2L+1K8&ludocid=13789624131299997506&gws_rd=cr&dcr=0&ei=4VH_WfK8HcnYjwOb7J2IAQ#gws_rd=cr&lrd=0x53716f0d5888de3b:0xbf5e96163c4a7742,1"
         },
         {
-            "review": "I had my eyelash extensions today and I love them! They look completely natural and feel amazing!",
+            "review": "“I had my eyelash extensions today and I love them! They look completely natural and feel amazing!”",
             "source": "Google",
             "link": "https://www.google.ca/search?q=Gratitude+Beauty+-Eyelash+extensions,+Facials,+Permanent+make-up,+3630+Brentwood+Rd+NW+%23232C+Calgary,+AB+T2L+1K8&ludocid=13789624131299997506&gws_rd=cr&dcr=0&ei=4VH_WfK8HcnYjwOb7J2IAQ#gws_rd=cr&lrd=0x53716f0d5888de3b:0xbf5e96163c4a7742,1"
         },
         {
-            "review": "I got eyelash extensions for the first time today. Honestly, I was so relaxed at one point that I fell asleep! My lashes look fantastic. I will definitely be back.",
+            "review": "“I got eyelash extensions for the first time today. Honestly, I was so relaxed at one point that I fell asleep! My lashes look fantastic. I will definitely be back.”",
             "source": "Facebook",
             "link": "https://www.facebook.com/pg/gratitudebeauty.ca/reviews"
         },
         {
-            "review": "Exceptional, professional service, knowledgable and friendly! Very impressed and will go back again.",
+            "review": "“Exceptional, professional service, knowledgable and friendly! Very impressed and will go back again.”",
             "source": "Facebook",
             "link": "https://www.facebook.com/pg/gratitudebeauty.ca/reviews"
         },
         {
-            "review": "I can honestly say there are no better lash technicians out there. I have never left feeling anything but 110% satisfied and beautiful.",
+            "review": "“I can honestly say there are no better lash technicians out there. I have never left feeling anything but 110% satisfied and beautiful.”",
             "source": "Facebook",
             "link": "https://www.facebook.com/pg/gratitudebeauty.ca/reviews"
         },
         {
-            "review": "Absolutely fantastic experience! Not only were these ladies professional and exceptionally qualified, the spa was beautifully bright, clean and welcoming.",
+            "review": "“Absolutely fantastic experience! Not only were these ladies professional and exceptionally qualified, the spa was beautifully bright, clean and welcoming.”",
             "source": "Facebook",
             "link": "https://www.facebook.com/pg/gratitudebeauty.ca/reviews"
         },
         {
-            "review": "Best place to get your lashes done. Very relaxing, you could fall asleep. Professional and clean. I will never go anywhere else!",
+            "review": "“Best place to get your lashes done. Very relaxing, you could fall asleep. Professional and clean. I will never go anywhere else!”",
             "source": "Facebook",
             "link": "https://www.facebook.com/pg/gratitudebeauty.ca/reviews"
         }
@@ -99,3 +99,7 @@ function getReviews() {
 }
 // Load get reviews
 getReviews();
+
+// Load Instafeed
+var feed = new Instafeed({get: 'user', userId: '4468612613', clientId: '43615ef3b9134adba22962011a0f205d', accessToken: '4468612613.1677ed0.4d0b7f7f96fa43039a5c88c815e11172', limit: 10, resolution: 'low_resolution', template: '<a class="instagram" href="{{link}}"><img src="{{image}}" alt="{{id}}"/></a>'});
+feed.run();

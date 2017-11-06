@@ -240,6 +240,12 @@ select {
     background: #fff;
     padding: 6px;
     margin-top: 10px;
+    transition: all 0.3s;
+}
+
+select:hover {
+    border: 1px solid #c19344;
+    transition: all 0.3s;
 }
 
 .custom-select {
@@ -451,6 +457,15 @@ footer {
     padding: 0 2em;
 }
 
+.grid .half.no-left-padding {
+    padding-left: 0;
+    padding-bottom: 0 !important;
+}
+
+.grid .half.no-right-padding {
+    padding-right: 0;
+}
+
 .grid .one-third {
     width: 33.3332%;
 }
@@ -499,7 +514,7 @@ footer {
     header img {
         height: 40px;
     }
-    header, #hero-text, .grid .whole {
+    header, #hero-text, .grid .whole, .content {
         padding: 1.125em;
     }
     #hero-text {
