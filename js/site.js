@@ -3,6 +3,11 @@ var date = new Date();
 var year = date.getFullYear();
 document.getElementById('year').innerHTML = year;
 
+// Rotating background image
+var heroBgList = ['hero-1', 'hero-2', 'hero-3'];
+var randomHeroBg = heroBgList[Math.floor(Math.random()*heroBgList.length)];
+document.getElementById('hero').classList = randomHeroBg;
+
 // Reviews from Google and Facebook
 var reviewsArray = [];
 var siteReviews = {

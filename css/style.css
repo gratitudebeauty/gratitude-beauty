@@ -129,9 +129,36 @@ header #social {
     width: 156px;
 }
 
+#hero {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#hero.hero-1 {
+    background: #fff url('../img/hero-1.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0 0;
+}
+
+#hero.hero-2 {
+    background: #fff url('../img/hero-2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0 0;
+}
+
+#hero.hero-3 {
+    background: #fff url('../img/hero-3.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0 0;
+}
+
 #hero-text {
     padding: 0 2em 2em 2em;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #hero-text h1 {
@@ -512,12 +539,21 @@ footer {
     header #social {
         display: none;
     }
+    #hero-text h2 {
+        padding: 1em 10em 1em 0;
+    }
 }
 
 @media screen and (max-width: 46em) {
     #hero-text h2, #closing h4 {
         min-width: 0;
         width: auto;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    #hero.hero-1, #hero.hero-2, #hero.hero-3 {
+        background: transparent;
     }
 }
 
@@ -547,6 +583,9 @@ footer {
     #hero-text h2, #gallery h3 {
         font-size: 1em;
     }
+    #hero-text h2 {
+        padding: 1em 6em 1em 0;
+    }
     #hero-text .options {
         max-width: none;
         display: -moz-box;
@@ -559,11 +598,15 @@ footer {
         align-items: center;
     }
     #hero-text .options a.telephone {
-        box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .1);
+        box-shadow: inset 0 0 0 2px rgba(193, 146, 67, 0.25);
+        color: #fff;
+        background: #fff;
+        color: #c19344;
         border: 0;
         padding: 0.75em 1em;
         border-radius: 100px;
         margin-left: 0.75em;
+        font-weight: 500;
     }
     #closing .options {
         max-width: 150px;
