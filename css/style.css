@@ -138,21 +138,21 @@ header #social {
 #hero.hero-1 {
     background: #fff url('../img/hero-1.jpg') no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-position: 0 0;
 }
 
 #hero.hero-2 {
     background: #fff url('../img/hero-2.jpg') no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-position: 0 0;
 }
 
 #hero.hero-3 {
     background: #fff url('../img/hero-3.jpg') no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-position: 0 0;
 }
 
@@ -183,6 +183,10 @@ header #social {
     max-width: 180px;
     text-align: center;
     display: inline-block;
+}
+
+.mobile {
+    display: none;
 }
 
 .btn {
@@ -573,25 +577,30 @@ footer {
         border-radius: 0;
     }
     header img {
-        height: 40px;
+        height: 50px;
     }
-    header, #hero-text, .grid .whole, .content {
+    header, .grid .whole, .content {
         padding: 1.125em;
     }
+    .mobile {
+        width: 100%;
+        display: block;
+    }
     #hero-text {
-        padding-top: 0;
+        padding: 0;
     }
     header nav {
         display: none;
     }
     #hero-text h1 {
         font-size: 2em;
+        padding: 0 0.750em;
     }
     #hero-text h2, #gallery h3 {
         font-size: 1em;
     }
     #hero-text h2 {
-        padding: 1em 6em 1em 0;
+        padding: 1em 1em 1em 1.250em;
     }
     #hero-text .options {
         max-width: none;
@@ -603,6 +612,7 @@ footer {
         justify-content: flex-start;
         -webkit-align-items: center;
         align-items: center;
+        padding-left: 1em;
     }
     #hero-text .options a.telephone {
         box-shadow: inset 0 0 0 2px rgba(193, 146, 67, 0.25);
@@ -649,6 +659,7 @@ footer {
     }
     #gallery #instafeed {
         padding: 0 1.5em 1.5em 1.5em;
+        margin: 0;
     }
     #gallery .instagram {
         height: auto;
