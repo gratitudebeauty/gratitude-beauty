@@ -109,6 +109,9 @@ header img {
 
 header nav {
     font-size: 0.875em;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+    border-radius: 6px;
 }
 
 header nav a {
@@ -551,7 +554,11 @@ footer {
         display: none;
     }
     #hero-text h2 {
-        padding: 1em 10em 1em 0;
+        padding: 1em 4em 1em 0;
+    }
+    #hero.hero-1, #hero.hero-2, #hero.hero-3 {
+        background-attachment: inherit;
+        background-position: -100px 0;
     }
 }
 
@@ -579,6 +586,10 @@ footer {
     header img {
         height: 50px;
     }
+    header {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
     header, .grid .whole, .content {
         padding: 1.125em;
     }
@@ -590,7 +601,10 @@ footer {
         padding: 0;
     }
     header nav {
-        display: none;
+        padding: 1em 1em 0 1em;
+        width: 100%;
+        text-align: center;
+        font-size: 0.750em;
     }
     #hero-text h1 {
         font-size: 2em;
@@ -624,6 +638,9 @@ footer {
         border-radius: 100px;
         margin-left: 0.75em;
         font-weight: 500;
+    }
+    .custom-select {
+        margin: 0 20px 20px 20px;
     }
     #closing .options {
         max-width: 150px;
