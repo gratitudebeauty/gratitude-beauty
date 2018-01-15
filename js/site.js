@@ -110,8 +110,48 @@ function getReviews() {
         }
     }
 }
+
+
+// Create modal
+function createModal() {
+    var overlay = document.createElement('div');
+    var modal = document.createElement('div');
+    var initialBookingButton = document.getElementById('initial-booking-intent');
+    var finalBookingButton = document.getElementById('final-booking-intent');
+    if (initialBookingButton || finalBookingButton) {
+        initialBookingButton.onclick = function(e) {
+            overlay.id = 'overlay';
+            modal.id = 'modal';
+            modal.className = 'visible';
+            modal.innerHTML = '<iframe src="https://bookeo.com/gratitudebeauty"></iframe>';
+            document.body.appendChild(overlay);
+            overlay.appendChild(modal);
+            e.preventDefault();
+        };
+        finalBookingButton.onclick = function(e) {
+            overlay.id = 'overlay';
+            modal.id = 'modal';
+            modal.className = 'visible';
+            modal.innerHTML = '<iframe src="https://bookeo.com/gratitudebeauty"></iframe>';
+            document.body.appendChild(overlay);
+            overlay.appendChild(modal);
+            e.preventDefault();
+            window.scrollTo(0, 0);
+        };
+    }
+    overlay.onclick = function() {
+        this.parentElement.removeChild(overlay);
+        this.removeChild(modal);
+    };
+    modal.onclick = function(event) {
+        event.stopPropagation();
+    };
+}
+
 // Load get reviews
 getReviews();
+// Initiate modal creation
+createModal();
 
 // Load Instafeed
 var feed = new Instafeed({get: 'user', userId: '4468612613', clientId: '43615ef3b9134adba22962011a0f205d', accessToken: '4468612613.1677ed0.4d0b7f7f96fa43039a5c88c815e11172', limit: 10, resolution: 'low_resolution', template: '<a class="instagram" href="{{link}}"><img src="{{image}}" alt="{{id}}"/></a>'});
