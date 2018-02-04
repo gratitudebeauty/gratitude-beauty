@@ -171,7 +171,7 @@ header #social {
 
 #hero-text h1 {
     font-family: 'Snell Roundhand', 'Lucida Calligraphy', 'Bitter', serif;
-    font-size: 2.5em;
+    font-size: 1.813em;
     font-weight: 900;
     letter-spacing: -1px;
     white-space: pre-line;
@@ -526,6 +526,7 @@ hr {
     display: block;
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 
 .member .experience {
@@ -560,7 +561,7 @@ footer {
 }
 
 .grid .half {
-    width: 50%;
+    width: 33.3332%;
     padding: 0 2em;
 }
 
@@ -665,12 +666,14 @@ footer {
     #container {
         border-radius: 0;
     }
-    header img {
+    /* header img {
         height: 50px;
-    }
+    } */
     header {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-justify-content: center;
+        justify-content: center;
     }
     header, .grid .whole, .content {
         padding: 1.125em;
@@ -681,6 +684,7 @@ footer {
     }
     #hero-text {
         padding: 0;
+        text-align: center;
     }
     header nav {
         padding: 1em 1em 0 1em;
@@ -689,14 +693,14 @@ footer {
         font-size: 0.750em;
     }
     #hero-text h1 {
-        font-size: 2em;
+        font-size: 1.750em;
         padding: 0 0.750em;
     }
     #hero-text h2, #gallery h3 {
-        font-size: 1em;
+        font-size: 0.875em;
     }
     #hero-text h2 {
-        padding: 1em 1em 1em 1.250em;
+        padding: 0em 1em 1em 1.250em;
     }
     #hero-text .options {
         max-width: none;
@@ -704,8 +708,8 @@ footer {
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
+        -webkit-justify-content: center;
+        justify-content: center;
         -webkit-align-items: center;
         align-items: center;
         padding-left: 1em;
@@ -778,6 +782,7 @@ footer {
         padding-bottom: 1.250em;
     }
     .grid .half:last-child {
+        padding-top: 1.250em;
         padding-bottom: 0;
     }
     .member {
