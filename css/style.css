@@ -561,7 +561,7 @@ footer {
 }
 
 .grid .half {
-    width: 33.3332%;
+    width: 50%;
     padding: 0 2em;
 }
 
@@ -576,6 +576,11 @@ footer {
 
 .grid .one-third {
     width: 33.3332%;
+}
+
+.grid .one-third.with-padding {
+    width: 33.3332%;
+    padding: 0 2em;
 }
 
 .grid .one-quarter {
@@ -773,15 +778,15 @@ footer {
         font-size: 0.875em;
         height: 260px;
     }
-    .grid .half {
+    .grid .half, .grid .one-third {
         width: 100%;
         padding: 0;
     }
-    .grid .half:first-child {
-        padding-top: 0;
-        padding-bottom: 1.250em;
+    .grid .one-third.with-padding {
+        padding: 0;
+        width: 100%;
     }
-    .grid .half:last-child {
+    .grid .one-third:nth-child(2), .grid .one-third:last-child {
         padding-top: 1.250em;
         padding-bottom: 0;
     }
