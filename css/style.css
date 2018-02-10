@@ -105,18 +105,20 @@ header {
     align-items: center;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
 }
 
 header img {
-    height: 75px;
+    height: 100px;
 }
 
 header nav {
-    font-size: 0.875em;
+    font-size: 0.813em;
     background: rgba(255, 255, 255, 0.7);
-    padding: 1em;
+    padding: 1em 0.25em;
     border-radius: 6px;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 header nav a {
@@ -147,7 +149,7 @@ header #social {
     background: #fff url('../img/hero-1.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 0 0;
+    background-position: 0 -75px;
 }
 
 #hero.hero-2 {
@@ -393,7 +395,7 @@ table td:nth-of-type(2) {
     -webkit-justify-content: space-between;
     justify-content: space-between;
     padding: 0 0 1.5em 0;
-    margin: 0 1.5em 1.5em 1.5em;
+    margin: 0 1.5em;
 }
 
 #gallery h3 {
