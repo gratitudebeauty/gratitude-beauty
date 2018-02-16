@@ -441,5 +441,13 @@ document.getElementById('year').innerHTML = year;
 var serviceType = document.getElementById('services');
 serviceType.onchange=function(){"lashes"===serviceType.value?$("html, body").animate({scrollTop:$("#lashes").offset().top}):"makeup"===serviceType.value?$("html, body").animate({scrollTop:$("#makeup").offset().top}):"nails"===serviceType.value?$("html, body").animate({scrollTop:$("#nails").offset().top}):"brows"===serviceType.value?$("html, body").animate({scrollTop:$("#brows").offset().top}):"facial"===serviceType.value?$("html, body").animate({scrollTop:$("#facial").offset().top}):"massage"===serviceType.value&&$("html, body").animate({scrollTop:$("#massage").offset().top})};
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110965294-5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110965294-5');
+</script>
 </body>
 </html>
