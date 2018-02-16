@@ -600,8 +600,8 @@ footer {
 }
 
 #overlay {
-    background: rgba(241, 241, 241, .9);
-    position: absolute;
+    background: rgba(193, 146, 67, 0.85);
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -612,8 +612,8 @@ footer {
     height: 100%;
 }
 #modal {
-    height: 90%;
-    width: 90%;
+    height: 180px;
+    width: 300px;
     position: absolute;
     left: 0;
     right: 0;
