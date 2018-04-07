@@ -249,7 +249,7 @@ header #social {
     text-fill-color: transparent;
 }
 
-#about, #closing, #contact {
+#about, #closing, #brentwood-contact, #tuxedo-contact {
     padding: 4em 2em;
 }
 
@@ -451,11 +451,11 @@ table td:nth-of-type(2) {
     padding-top: 2em;
 }
 
-#contact {
+#brentwood-contact, #tuxedo-contact {
     padding-top: 0;
 }
 
-#contact h5 {
+#brentwood-contact h5, #tuxedo-contact h5 {
     text-align: center;
     padding-bottom: 2em;
     text-transform: uppercase;
@@ -748,16 +748,16 @@ footer {
     .btn {
         font-size: 0.813em;
     }
-    #about, #closing, #contact {
+    #about, #closing, #brentwood-contact, #tuxedo-contact {
         padding: 1.5em;
     }
     #closing .book-online {
         padding-top: 1.250em;
     }
-    #contact h5 {
-        padding-bottom: 1.250em;
+    #brentwood-contact h5, #tuxedo-contact h5 {
+        padding: 1.250em;
     }
-    #contact {
+    #brentwood-contact, #tuxedo-contact {
         padding-top: 0;
     }
     #about h3, #closing h4 {
@@ -809,10 +809,10 @@ footer {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    #about, #closing, #contact, .grid .whole {
+    #about, #closing, #brentwood-contact, #tuxedo-contact .grid .whole {
         padding: 1.125em;
     }
-    #contact h5, .grid .half:first-child {
+    #brentwood-contact h5, #tuxedo-contact h5, .grid .half:first-child {
         padding-bottom: 1.125em;
     }
     #hero-text .book-online .options .btn, #hero-text .options a.telephone {
