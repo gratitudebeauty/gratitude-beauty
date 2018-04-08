@@ -290,6 +290,8 @@ header #social {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .content form input, .content form textarea {
@@ -754,7 +756,7 @@ footer {
         justify-content: center;
         -webkit-align-items: center;
         align-items: center;
-        padding-left: 1em;
+        /* padding-left: 1em; */
     }
     #hero-text .options a.telephone {
         box-shadow: inset 0 0 0 2px rgba(193, 146, 67, 0.25);
