@@ -290,8 +290,6 @@ header #social {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    -webkit-appearance: none;
-    appearance: none;
 }
 
 .content form input, .content form textarea {
@@ -299,6 +297,8 @@ header #social {
     font-size: 0.875em;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .content form textarea {
