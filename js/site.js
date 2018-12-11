@@ -4,14 +4,14 @@ var year = date.getFullYear();
 document.getElementById('year').innerHTML = year;
 
 // Rotating background image
-var heroBgList = ['hero-1', 'hero-2', 'hero-3'];
+var heroBgList = ['hero-1', 'hero-2', 'hero-3', 'hero-4', 'hero-5'];
 var randomHeroBg = heroBgList[Math.floor(Math.random()*heroBgList.length)];
 document.getElementById('hero').classList = randomHeroBg;
 
 // Mobile images
 var imgs = document.getElementsByClassName('mobile');
 for (var i = 0; i < imgs.length; i++) {
-  var num = Math.floor(Math.random() * 3 + 1);
+  var num = Math.floor(Math.random() * 5 + 1);
   imgs[i].src = 'img/hero-' + num + '-sm.jpg';
   imgs[i].alt = imgs[i].src;
 }

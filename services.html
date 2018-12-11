@@ -4,19 +4,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="keywords" content="calgary health and beauty, japanese health and beauty, nails, spa, gratitude beauty calgary, eyelashes, facials, permanent makeup">
 <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
-<meta name="description" content="High quality techniques and services for lashes, facials, and permanent makeup.">
+<meta name="description" content="High quality techniques and services for optical hair removal, photo rejuvenation, lashes, facials, nails, and permanent makeup in Calgary.">
 <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
 <meta name="theme-color" content="#c19344">
 <title>Gratitude Beauty &#10022; Japanese Health &amp; Beauty</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400i,700">
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Simonetta">
+<link rel="stylesheet" href="css/style.css">
 <meta property="og:title" content="Gratitude Beauty ✦ Japanese Health & Beauty">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://gratitudebeauty.ca">
 <meta property="og:image" content="http://gratitudebeauty.ca/img/promo-img.jpg">
-<meta property="og:description" content="High quality techniques and services for lashes, facials, nails, and permanent makeup in Calgary.">
+<meta property="og:description" content="High quality techniques and services for optical hair removal, photo rejuvenation, lashes, facials, nails, and permanent makeup in Calgary.">
 </head>
 <body>
     <div id="container">
@@ -36,17 +37,55 @@
             <div class="custom-select">
                 <select id="services">
                     <option disabled selected>Select a Service</option>
+                    <option value="removal">Hair Removal</option>
                     <option value="lashes">Lashes</option>
                     <option value="makeup">Permanent Makeup</option>
                     <option value="nails">Nails</option>
                     <option value="brows">Brows</option>
                     <option value="facial">Facial</option>
                     <option value="massage">Massage</option>
+					<option value="other">Other Treatments</option>
                 </select>
                 <span class="arrow"><i class="material-icons md-24 goldy">keyboard_arrow_down</i></span>
             </div>
+            
+            <p>Please visit our <a class="link" href="https://www.facebook.com/gratitudebeauty.ca/">facebook page</a> for up-to-date promotions for hair removal and other treatments.</p>
         </div>
         <div class="content">
+            <!-- HAIR REMOVAL -->
+			<h1 id="removal"><strong class="goldy">Hair Removal</strong></h1>
+			<div class="grid">
+                <table class="bigTable">
+                    <tr>
+                        <th>Hair Removal</th>
+                        <th>Single</th>
+                        <th>6 times</th>
+                        <th>12 times</th>
+                    </tr>
+                    <tr>
+                        <td>Small Parts</td>
+                        <td>55</td>
+                        <td>270 (45)</td>
+                        <td>420 (35)</td>
+                    </tr>
+                    <tr>
+                        <td>Large Parts</td>
+                        <td>85</td>
+                        <td>450 (75)</td>
+                        <td>780 (65)</td>
+                    </tr>
+                    <tr>
+                        <td>Men’s Face</td>
+                        <td>75</td>
+                        <td>390 (65)</td>
+                        <td>660 (55)</td>
+                    </tr>
+                </table>
+                <div class="grid">
+                    <img src="img/sParts.png" onclick="openModal(1)" class="modal-img" alt = "Hair Removal: Small Parts"/>
+                    <img src="img/lParts.png" onclick="openModal(2)" class="modal-img" alt = "Hair Removal: Large Parts"/>
+                </div>
+			</div>
             <!-- LASHES -->
             <h1 id="lashes"><strong class="goldy">Lashes</strong></h1>
             <h2>Note: For lash sets, add additional $10 if you would like to include lash removal as well with your service.</h2>
@@ -406,9 +445,64 @@
                     <td>60</td>
                 </tr>
             </table>
-        </div>
+			<!-- OTHER TREATMENTS -->
+			<h1 id="other"><strong class="goldy">Other Treatments</strong></h1>
+				<div class="grid">
+                    <table class="bigTable">
+                        <tr>
+                            <th>Other Treatments</th>
+                            <th>Single</th>
+                            <th>6 times</th>
+                            <th>12 times</th>
+                        </tr>
+                        <tr>
+                            <td>Photo Rejuvenation</td>
+                            <td>65</td>
+                            <td>330 (55)</td>
+                            <td>585 (45)</td>
+                        </tr>
+                        <tr>
+                            <td>Breast Enlargement</td>
+                            <td>75</td>
+                            <td>390 (65)</td>
+                            <td>660 (55)</td>
+                        </tr>
+                    </table>
+				</div>
+		</div>
         <footer>Copyright &copy; <span id="year"></span> Gratitude Beauty</footer>
+        <!-- The Image Modal -->
+        <div id="myModal" class="modal">
+          <!-- The Close Button -->
+          <span class="close" onclick="closeModal()">&times;</span>
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id = "modal-content">
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
     </div>
+<script>
+    // Open the Modal
+    function openModal(id) {
+      document.getElementById('myModal').style.display = "block";
+      showImgs(id)
+    }
+
+    // Close the Modal
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    function showImgs(n) {
+      var modalImages = document.getElementsByClassName("modal-img");
+      var captionText = document.getElementById("caption");
+      var modalContent = document.getElementById("modal-content");
+      currentImg = modalImages[n-1];
+      currentImg.style.display = "block";
+      modalContent.src = currentImg.src;
+      captionText.innerHTML = currentImg.alt;
+    }    
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 // Keep the year up to date
@@ -417,7 +511,16 @@ var year = date.getFullYear();
 document.getElementById('year').innerHTML = year;
 // Handle service type from dropdown menu
 var serviceType = document.getElementById('services');
-serviceType.onchange=function(){"lashes"===serviceType.value?$("html, body").animate({scrollTop:$("#lashes").offset().top}):"makeup"===serviceType.value?$("html, body").animate({scrollTop:$("#makeup").offset().top}):"nails"===serviceType.value?$("html, body").animate({scrollTop:$("#nails").offset().top}):"brows"===serviceType.value?$("html, body").animate({scrollTop:$("#brows").offset().top}):"facial"===serviceType.value?$("html, body").animate({scrollTop:$("#facial").offset().top}):"massage"===serviceType.value&&$("html, body").animate({scrollTop:$("#massage").offset().top})};
+serviceType.onchange=function(){
+"removal"===serviceType.value?$("html, body").animate({scrollTop:$("#removal").offset().top}):
+"lashes"===serviceType.value?$("html, body").animate({scrollTop:$("#lashes").offset().top}):
+"makeup"===serviceType.value?$("html, body").animate({scrollTop:$("#makeup").offset().top}):
+"nails"===serviceType.value?$("html, body").animate({scrollTop:$("#nails").offset().top}):
+"brows"===serviceType.value?$("html, body").animate({scrollTop:$("#brows").offset().top}):
+"facial"===serviceType.value?$("html, body").animate({scrollTop:$("#facial").offset().top}):
+"massage"===serviceType.value?$("html, body").animate({scrollTop:$("#massage").offset().top}):
+"other"===serviceType.value&&$("html, body").animate({scrollTop:$("#other").offset().top})
+};
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110965294-5"></script>
 <script>
