@@ -19,6 +19,12 @@ ol, ul {
     list-style: none;
 }
 
+.bullet ol, ul {
+    list-style-position: inside;
+    list-style-type: disc;
+    line-height: 
+}
+
 blockquote, q {
     quotes: none;
 }
@@ -150,47 +156,46 @@ header #social {
 
 #hero {
     width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
 #hero.hero-1 {
     background: #fff url('../img/hero-1.jpg') no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
-    background-position: 0 -75px;
+    background-position: 0 0;
 }
 
 #hero.hero-2 {
     background: #fff url('../img/hero-2.jpg') no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
     background-position: 0 0;
 }
 
 #hero.hero-3 {
     background: #fff url('../img/hero-3.jpg') no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
     background-position: 0 0;
 }
 
 #hero.hero-4 {
     background: #fff url('../img/hero-4.jpg') no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: auto;
-    background-position: center right;
+    background-position: 100% 100%;
 }
 
 #hero.hero-5 {
     background: #fff url('../img/hero-5.jpg') no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: auto;
-    background-position: center right;
+    background-position: 100% 100%;
 }
 
 #hero-text {
-    padding: 0 2em 2em 2em;
+    padding: 0em 2em 2em 2em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -335,6 +340,23 @@ header #social {
     cursor: pointer;
 }
 
+#location {
+    width: 100%;
+    padding-bottom: 0.8em;
+}
+
+#location div {
+    width: 20em;
+    padding: 0;
+    margin: 0;
+}
+
+#location select {
+    color: dimgrey;
+    font-size: 0.9em;
+    text-indent: 0.5em;
+}
+
 .no-bottom-padding {
     padding-bottom: 0 !important;
 }
@@ -452,6 +474,13 @@ select:hover {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+.copyright{
+  position: relative;
+  text-align: center;
+  bottom: 2em;
+  color: darkgrey;  
 }
 
 table {
@@ -793,9 +822,6 @@ footer {
     #hero-text h2 {
         padding: 1em 4em 1em 0;
     }
-    #hero.hero-1, #hero.hero-2, #hero.hero-3, #hero.hero-4, #hero.hero-5 {
-        background-attachment: inherit;
-    }
 }
 
 @media screen and (max-width: 46em) {
@@ -819,9 +845,6 @@ footer {
     #container {
         border-radius: 0;
     }
-    /* header img {
-        height: 50px;
-    } */
     header {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -836,7 +859,7 @@ footer {
         display: block;
     }
     #hero-text {
-        padding: 0;
+        padding: 0em;
         text-align: center;
     }
     header nav {
@@ -963,6 +986,7 @@ footer {
 }
 
 @media screen and (max-width: 22em) {
+    
     #hero-text .options {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;

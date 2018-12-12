@@ -36,7 +36,18 @@
             <h2>Have a question? Please feel free to contact Gratitude Beauty using the form below.</h2>
         </div>
         <div class="content">
-            <form action="https://formspree.io/info@gratitudebeauty.ca" method="POST">
+            <form action="https://formspree.io/info@gratitudebeauty.ca" method="POST" id="contact-form">
+                <div id="location">
+                    <div class="custom-select">
+                        <select id="location-email">
+                            <option value ="" disabled selected>Select a Location</option>
+                            <option value="brentwood">Brentwood</option>
+                            <option value="16ave">16th Ave NW</option>
+                        </select>
+                        <span class="arrow"><i class="material-icons md-24 goldy">keyboard_arrow_down</i></span>
+                    </div>
+                </div>
+                
                 <div class="name-email">
                     <input type="text" name="name" placeholder="Your name" required>
                     <input type="email" name="_replyto" placeholder="Your email" required>
@@ -47,13 +58,27 @@
         </div>
         <footer>Copyright &copy; <span id="year"></span> Gratitude Beauty</footer>
     </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110965294-5"></script>
 <script>
 // Keep the year up to date
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById('year').innerHTML = year;
+    
+window.onload = function(){
+    // Handle location email from dropdown menu
+    var location = document.getElementById('location-email');
+    location.onchange=function(){
+    var form = document.getElementById("contact-form")
+    if( location.value == "brentwood" ) {
+        form.action = "https://formspree.io/Brentwood@gratitudebeauty.ca";
+    }
+    if( location.value == "16ave" ) {
+        form.action = "https://formspree.io/16ave@gratitudebeauty.ca";
+    }
+    }
+}
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110965294-5"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
