@@ -417,7 +417,7 @@ select:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 2em; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -431,8 +431,8 @@ select:hover {
 .modal-content {
   margin: auto;
   display: block;
-  max-height: 120%;
-  max-width: 100%;
+  max-height: 90%;
+  max-width: 80%;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -462,7 +462,7 @@ select:hover {
 .close {
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 25px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
