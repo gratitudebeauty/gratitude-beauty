@@ -413,11 +413,13 @@ select:hover {
     transition: 0.3s;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 700px){
     .modal-img {
-        height: 180px;
-        margin: 0.25em;
-        margin-left: 1.5em;
+        box-sizing: border-box;
+        padding: 0em;
+        width: 45%;
+        height: auto;
+        margin: 0.5em;
     }
 }
 
