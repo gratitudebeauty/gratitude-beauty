@@ -483,6 +483,15 @@ select:hover {
   color: darkgrey;  
 }
 
+@media only screen and (max-height: 400px){
+    .copyright{
+        font-size: 0.5em;
+    }
+    .close{
+        font-size: 0;
+    }
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -510,15 +519,18 @@ table.bigTable {
     table-layout: fixed;
 }
 
+table.bigTable th, table.bigTable td {
+	text-align: left;
+    vertical-align: middle;
+}
+
 @media only screen and (max-width: 900px){
   table.bigTable {
     table-layout: auto;
   }
-}
-
-table.bigTable th, table.bigTable td {
-	text-align: left;
-    vertical-align: middle;
+  table.bigTable td, table.bigTable th {
+    text-align: center;
+  }
 }
 
 #about h3 {
