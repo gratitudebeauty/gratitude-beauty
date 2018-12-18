@@ -122,7 +122,7 @@ function createModal() {
             overlay.id = 'overlay';
             modal.id = 'modal';
             modal.className = 'visible';
-            modal.innerHTML = '<h1>Choose location</h1> <a style="margin-top:10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty">Brentwood</a> <a style="margin-top: 10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty-second">Tuxedo Park</a>';
+            modal.innerHTML = '<h1>Choose location</h1> <a style="margin-top:10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty">Brentwood</a> <a style="margin-top: 10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty-second">16th Ave NW</a>';
             document.body.appendChild(overlay);
             overlay.appendChild(modal);
             e.preventDefault();
@@ -131,7 +131,7 @@ function createModal() {
             overlay.id = 'overlay';
             modal.id = 'modal';
             modal.className = 'visible';
-            modal.innerHTML = '<h1>Choose location</h1> <a style="margin-top:10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty">Brentwood</a> <a style="margin-top: 10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty-second">Tuxedo Park</a>';
+            modal.innerHTML = '<h1>Choose location</h1> <a style="margin-top:10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty">Brentwood</a> <a style="margin-top: 10px;" class="btn gradient" href="https://bookeo.com/gratitudebeauty-second">16th Ave NW</a>';
             document.body.appendChild(overlay);
             overlay.appendChild(modal);
             e.preventDefault();
