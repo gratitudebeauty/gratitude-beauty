@@ -188,15 +188,15 @@ header #social {
 #hero.hero-4 {
     background: #fff url('../img/hero-4.jpg') no-repeat;
     background-attachment: inherit;
-    background-size: auto;
-    background-position: 100% 100%;
+    background-size: 100% auto;
+    background-position: 0% 50%;
 }
 
 #hero.hero-5 {
     background: #fff url('../img/hero-5.jpg') no-repeat;
     background-attachment: inherit;
-    background-size: auto;
-    background-position: 100% 100%;
+    background-size: 100% auto;
+    background-position: 0% 50%;
 }
 
 #hero-text {
