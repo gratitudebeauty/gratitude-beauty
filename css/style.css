@@ -549,6 +549,7 @@ table.bigTable th, table.bigTable td {
   }
   table.bigTable td, table.bigTable th {
     text-align: center;
+    padding: 0.1em 0.1em;
   }
 }
 
