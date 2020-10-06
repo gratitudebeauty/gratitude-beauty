@@ -425,6 +425,11 @@ select:hover {
 }
 
 @media only screen and (max-width: 700px){
+	col.first{ width:60%;}
+	col.second{ width:40%;}
+	col.firstlong{ width:80%;}
+	col.secondlong{width: 20%;}
+	
     .modal-img {
         box-sizing: border-box;
         padding: 0em;
@@ -549,14 +554,22 @@ table.bigTable th, table.bigTable td {
 	text-align: left;
     vertical-align: middle;
 }
+col.first{ width:40%;}
+col.second{ width:60%;}
+col.firstlong{ width:60%;}
+col.secondlong{width: 40%;}
 
 @media only screen and (max-width: 900px){
+	col.first{ width:60%;}
+	col.second{ width:40%;}
+	col.firstlong{ width:80%;}
+	col.secondlong{width: 20%;}
   table.bigTable {
     table-layout: auto;
   }
   table.bigTable td, table.bigTable th {
-    /*text-align: center;*/
-    padding: 0.1em 0.1em;
+    /*text-align: center;
+    padding: 0.1em 0.1em;*/
   }
 }
 
@@ -849,6 +862,10 @@ footer {
 }
 
 @media screen and (max-width: 48em) {
+	col.first{ width:60%;}
+	col.second{ width:40%;}
+	col.firstlong{ width:80%;}
+	col.secondlong{width: 20%;}
     #about h3 {
         max-width: 85%;
     }
@@ -864,6 +881,7 @@ footer {
 }
 
 @media screen and (max-width: 46em) {
+	
     #hero-text h2, #closing h4 {
         min-width: 0;
         width: auto;
@@ -1025,7 +1043,10 @@ footer {
 }
 
 @media screen and (max-width: 22em) {
-    
+	col.first{ width:60%;}
+	col.second{ width:40%;}
+	col.firstlong{ width:80%;}
+	col.secondlong{width: 20%;}
     #hero-text .options {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
