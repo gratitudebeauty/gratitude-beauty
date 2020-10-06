@@ -203,6 +203,13 @@ header #social {
     background-position: 0% 50%;
 }
 
+#hero.hero-6 {
+    background: #fff url('../img/hero-6.jpg') no-repeat;
+    background-attachment: inherit;
+    background-size: 100% auto;
+    background-position: 0% 50%;
+}
+
 #hero-text {
     padding: 0em 2em 2em 2em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -864,7 +871,7 @@ footer {
 }
 
 @media screen and (max-width: 37.5em) {
-    #hero.hero-1, #hero.hero-2, #hero.hero-3, #hero.hero-4, #hero.hero-5 {
+    #hero.hero-1, #hero.hero-2, #hero.hero-3, #hero.hero-4, #hero.hero-5, #hero.hero-6 {
         background: transparent;
     }
 }
