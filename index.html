@@ -13,7 +13,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400i,700">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Simonetta">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta property="og:title" content="Gratitude Beauty ✦ Japanese Health & Beauty">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://gratitudebeauty.ca">
@@ -63,8 +64,8 @@
             </div>
         </div>
         <div id="gallery" class="gradient">
-            <h3><i class="material-icons">camera_enhance</i> Latest from our Instagram <a href="https://www.instagram.com/gratitudebeautyyyc">@gratitudebeautyyyc</a></h3>
-            <div id="instafeed"></div>
+            <h3>Latest from our Instagram <a href="https://www.instagram.com/gratitudebeautyyyc" class="fa fa-instagram">&nbsp;&nbsp;@gratitudebeautyyyc</a></h3>
+            <div id="instafeed" class="instafeed"></div>
         </div>
         <div id="closing">
             <h4>We only use high quality products. Your satisfaction and happy experiences are guaranteed with our services. It is our top priority!
@@ -140,7 +141,29 @@
         </div>
         <footer>Copyright &copy; <span id="year"></span> Gratitude Beauty</footer>
     </div>
-<script src="js/instafeed.min.js"></script>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.instagramFeed.min.js"></script>
+    <script>
+        (function($){
+            $(window).on('load', function(){
+                $.instagramFeed({
+                    'username': 'gratitudebeautyyyc',
+                    'container': "#instafeed",
+                    'display_profile': true,
+                    'display_biography': true,
+                    'display_gallery': true,
+                    'callback': null,
+                    'styling': true,
+                    'items': 6,
+                    'items_per_row': 3,
+                    'margin': 1
+                });});
+        })(jQuery);
+    </script>
+	
+	
 <script src="js/site.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110965294-5"></script>
 <script>
