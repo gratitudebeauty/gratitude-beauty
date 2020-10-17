@@ -827,6 +827,17 @@ footer {
     clear: both;
 }
 
+.fa {
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+
+}
+
 #overlay {
     background: rgba(193, 146, 67, 0.85);
     position: fixed;
