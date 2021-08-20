@@ -604,6 +604,7 @@ col.secondlong{width: 40%;}
     padding-bottom: 0.25em;
     transition: all 0.3s;
     display: inline-block;
+	font-weight: bold;
 }
 
 #reviews a:hover {
