@@ -144,5 +144,13 @@ getReviews();
 createModal();
 
 // Load Instafeed
-var feed = new Instafeed({get: 'user', userId: '4468612613', clientId: '43615ef3b9134adba22962011a0f205d', accessToken: '4468612613.1677ed0.4d0b7f7f96fa43039a5c88c815e11172', limit: 10, resolution: 'low_resolution', template: '<a class="instagram" href="{{link}}"><img src="{{image}}" alt="{{id}}"/></a>'});
+var feed = new Instafeed({
+    get: 'user'
+  , userId: '4468612613'
+  , clientId: '43615ef3b9134adba22962011a0f205d'
+  , accessToken: '4468612613.1677ed0.4d0b7f7f96fa43039a5c88c815e11172'
+  , limit: 10
+  , resolution: 'low_resolution'
+  , template: '<a class="instagram" href="{{link}}"><img src="{{image}}" alt="{{id}}"/></a>'
+});
 feed.run();
