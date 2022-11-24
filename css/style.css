@@ -552,6 +552,10 @@ table.bigTable th, table.bigTable td {
   text-align: left;
   vertical-align: middle;
 }
+table.bigTable tr:hover {
+  background-color: #e5e5e5;
+}
+
 col.first{ width:40%;}
 col.second{ width:60%;}
 col.firstlong{ width:60%;}
@@ -1087,4 +1091,15 @@ footer {
   footer {
     padding: 1.125em 1.125em 2.6667em 1.125em;
   }
+}
+
+
+
+.price.sm {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+}
+.price::before {
+  content: '$';
 }
