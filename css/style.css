@@ -437,8 +437,20 @@ select:hover {
   }
 }
 
+.modal-img {
+  border: 12px solid white;
+}
 .modal-img:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  /*
+  box-shadow:
+    0 0    0   12px white,
+    0 4px  8px 12px rgba(0, 0, 0, 0.2 ),
+    0 6px 20px 12px rgba(0, 0, 0, 0.19);
+  */
+  box-shadow:
+    0 4px  8px 0 rgba(0, 0, 0, 0.2 ),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* The Modal (background) */
