@@ -1,0 +1,22 @@
+{
+  "lash": {
+    "image-paginator": {
+      "images": [
+        "/img/menu/menu_lash_01.jpg",
+        "/img/menu/menu_lash_02.jpg",
+        "/img/menu/menu_lash_03.jpg",
+        "/img/menu/menu_lash_04.jpg",
+        "/img/menu/menu_lash_05.jpg"
+      ]
+    }
+  },
+  "nail": {
+    "image-paginator": {
+      "images": [
+        "/img/menu/menu_nail_promote.jpg",
+        "/img/menu/menu_nail_01.jpg",
+        "/img/menu/menu_nail_02.jpg"
+      ]
+    }
+  }
+}

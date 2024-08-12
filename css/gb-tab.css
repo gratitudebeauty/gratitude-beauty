@@ -1,0 +1,22 @@
+.gb-tab .tab-header {
+  display: inline-flex;
+  margin: 0 auto;
+  padding: 12px;
+  gap: 24px;
+}
+
+.gb-tab .tab-header .tab-item {
+  padding: 8px 16px;
+}
+
+.gb-tab .tab-header .tab-item[selected] {
+  color: #c19344;
+  font-weight: bold;
+}
+
+.gb-tab .tab-body > *:not([selected]) {
+  display: none;
+}
+.gb-tab .tab-body > *[selected] {
+  display: block;
+}
