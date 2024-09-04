@@ -7,6 +7,11 @@
 
 .gb-tab .tab-header .tab-item {
   padding: 8px 16px;
+  cursor: default;
+}
+
+.gb-tab .tab-header .tab-item:hover {
+  font-weight: bold;
 }
 
 .gb-tab .tab-header .tab-item[selected] {
