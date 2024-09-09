@@ -1,12 +1,38 @@
 .gb-tab .tab-header {
+  display: flex;
+  padding: 0 12px;
+}
+.gb-tab .tab-header > .tab-header-left,
+.gb-tab .tab-header > .tab-header-right {
+  flex: 1;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  min-width: 20px;
+}
+.gb-tab .tab-header > .tab-header-left::before {
+  content: '<';
+}
+.gb-tab .tab-header > .tab-header-right::before {
+  content: '>';
+}
+.gb-tab .tab-header > .tab-header-list {
   margin: 0 auto;
-  padding: 12px;
-  gap: 24px;
+  max-width: calc(100vw - 76px);
+  overflow: hidden;
+}
+.gb-tab .tab-header > .tab-header-list > .tab-header-slider {
+  display: inline-flex;
+  flex: auto 0 0;
+  gap: 0 6px;
+  transition: transform .32s ease;
 }
 
 .gb-tab .tab-header .tab-item {
-  padding: 8px 16px;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 4px 8px;
   cursor: pointer;
 }
 

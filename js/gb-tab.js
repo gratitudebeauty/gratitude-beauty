@@ -21,6 +21,24 @@ class Tab
 
 function createTab(root)
 {
+  const btnLeft = root.querySelector('.tab-header-left')
+  const btnRight = root.querySelector('.tab-header-right')
+  const headlist = root.querySelector('.tab-header-list')
+  const slider = root.querySelector('.tab-header-slider')
+  
+  let curSlideStep = 0
+  btnLeft.addEventListener('click', () => {
+    const headerRect = headlist.getBoundingClientRect()
+    const sliderRect = slider.getBoundingClientRect()
+    const maxSlide = sliderRect.width - headerRect.width
+    curSlideStep = Math.min(maxSlide, curSlideStep + 100)
+    slider.style.transform = `translateX(-${curSlideStep}px)`
+  })
+  btnRight.addEventListener('click', () => {
+    curSlideStep = Math.max(0, curSlideStep - 100)
+    slider.style.transform = `translateX(-${curSlideStep}px)`
+  })
+
   const items = [...root.querySelectorAll('.tab-header .tab-item')]
     .map(x => new Tab({
       element: x,
