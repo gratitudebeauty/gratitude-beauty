@@ -1123,3 +1123,8 @@ footer {
 .policy > p {
   margin-bottom: 16px;
 }
+
+/***********************************************/
+.page-instruction {
+  padding: 0 40px;
+}
