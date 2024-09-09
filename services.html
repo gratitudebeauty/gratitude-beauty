@@ -45,23 +45,576 @@
     <main id="service-content" class="gb-tab">
       <section id="service-tab">
         <div class="tab-header">
+          <span class="tab-item" data-value="hair-removal">Hair Removal</span>
+          <span class="tab-item" data-value="other-treatments">Other Treatments</span>
+          <span class="tab-item" data-value="premade-volume">Premade Volume</span>
           <span class="tab-item" data-value="lash">Lash</span>
+          <span class="tab-item" data-value="permanent-makeup">Permanent Makeup</span>
           <span class="tab-item" data-value="nail">Nail</span>
+          <span class="tab-item" data-value="brows">Brows</span>
+          <span class="tab-item" data-value="facial">Facial</span>
+          <span class="tab-item" data-value="massage">Massage</span>
         </div>
       </section>
       <section id="service-body">
-        <div class="page-instruction">
-          <p>Click / tap on the menu to switch pages.</p>
-        </div>
         <div class="tab-body">
           <!-- Lash -->
           <div data-value="lash">
+            <div class="page-instruction">
+              <p>Click / tap on the menu to switch pages.</p>
+            </div>
             <figure class="paginator" data-value="lash"></figure>
           </div>
           <!-- Nails -->
           <div data-value="nail">
+            <div class="page-instruction">
+              <p>Click / tap on the menu to switch pages.</p>
+            </div>
             <figure class="paginator" data-value="nail"></figure>
           </div>
+
+          <div data-value="hair-removal" class="legacy">
+            <!-- HAIR REMOVAL -->
+            <h1 id="removal"><strong class="goldy">Hair Removal Pacakge</strong></h1>
+            <div class="grid">
+              <table class="bigTable">
+                <tr>
+                  <th>Hair Removal</th>
+                  <th>Single</th>
+                </tr>
+                <tr>
+                  <td>Small Parts</td>
+                  <td><span class="price sm">55</span></td>
+                </tr>
+                <tr>
+                  <td>Large Parts</td>
+                  <td><span class="price sm">85</span></td>
+                </tr>
+                <tr>
+                  <td>Men’s Face</td>
+                  <td><span class="price sm">75</span></td>
+                </tr>
+              </table>
+              <table class="bigTable">
+                <tr>
+                  <th>3 Treatments</th>
+                  <th>Price<br/>(30% off the regular price)</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Small Parts</td>
+                  <td><span class="price sm">115.5</span></td>
+                  <td>Regular price $165<br/>$38.5 /per</td>
+                </tr>
+                <tr>
+                  <td>Large Parts</td>
+                  <td><span class="price sm">178.5</span></td>
+                  <td>Regular price $255<br/>$59.5 /per</td>
+                </tr>
+                <tr>
+                  <td>Men’s Face</td>
+                  <td><span class="price sm">157.5</span></td>
+                  <td>Regular price $225<br/>$52.5 /per</td>
+                </tr>
+              </table>
+              <table class="bigTable">
+                <tr>
+                  <th>6 Treatments</th>
+                  <th>Price<br/>(35% off the regular price)</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Small Parts</td>
+                  <td><span class="price sm">214.5</span></td>
+                  <td>Regular price $165<br/>$35.75 /per</td>
+                </tr>
+                <tr>
+                  <td>Large Parts</td>
+                  <td><span class="price sm">331.5</span></td>
+                  <td>Regular price $255<br/>$55.25 /per</td>
+                </tr>
+                <tr>
+                  <td>Men’s Face</td>
+                  <td><span class="price sm">292.5</span></td>
+                  <td>Regular price $225<br/>$48.75 /per</td>
+                </tr>
+              </table>
+              <div class="grid">
+                <img src="img/sParts.png" onclick="openModal(1)" class="modal-img" alt="Hair Removal: Small Parts"/>    
+                <img src="img/lParts.png" onclick="openModal(2)" class="modal-img" alt="Hair Removal: Large Parts"/>
+              </div>
+            </div>
+          </div>
+          <div data-value="other-treatments" class="legacy">
+            <!-- OTHER TREATMENTS -->
+            <h1 id="other"><strong class="goldy">Other Treatments<sup>*</sup></strong></h1>
+            <div class="grid">
+              <table class="bigTable">
+                <colgroup>
+                  <col span="1" class="first">
+                  <col span="1" class="second">
+                </colgroup>
+                <tr>
+                  <th>Other Treatments</th>
+                  <th>Single</th>
+                </tr>
+                <tr>
+                  <td>Photo Rejuvenation</td>
+                  <td><span class="price sm">65</span></td>
+                </tr>
+                <tr>
+                  <td>Breast Enlargement</td>
+                  <td><span class="price sm">75</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div data-value="premade-volume" class="legacy">
+            <!-- PREMADE VOLUME -->
+            <h1 id="premade"><strong class="goldy">Premade Volume</strong></h1>
+            <table class="bigTable">
+              <tr>
+                <th><strong class="goldy">3D Volume(premade)</strong></th>
+                <th>Apprentice</th><th>Junior</th><th>Senior</th><th>Director</th>
+              </tr>
+              <tr>
+                <td>Full set (+Removal)</td>
+                <td></td>
+                <td><span class="price sm">140</span></td>
+                <td><span class="price sm">150</span></td>
+                <td><span class="price sm">160</span></td>
+              </tr>
+              <tr>
+                <td>Full set</td>
+                <td></td>
+                <td><span class="price sm">130</span></td>
+                <td><span class="price sm">140</span></td>
+                <td><span class="price sm">150</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 2w</td>
+                <td></td>
+                <td><span class="price sm">65</span></td>
+                <td><span class="price sm">75</span></td>
+                <td><span class="price sm">85</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 3w</td>
+                <td></td>
+                <td><span class="price sm">75</span></td>
+                <td><span class="price sm">85</span></td>
+                <td><span class="price sm">95</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 4w (half set)</td>
+                <td></td>
+                <td><span class="price sm">85</span></td>
+                <td><span class="price sm">95</span></td>
+                <td><span class="price sm">105</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 5w</td>
+                <td></td>
+                <td><span class="price sm">95</span></td>
+                <td><span class="price sm">105</span></td>
+                <td><span class="price sm">115</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 6w</td>
+                <td></td>
+                <td><span class="price sm">105</span></td>
+                <td><span class="price sm">115</span></td>
+                <td><span class="price sm">125</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th><strong class="goldy">5D Volume(premade)</strong></th>
+                <th>Apprentice</th><th>Junior</th><th>Senior</th><th>Director</th>
+              </tr>
+              <tr>
+                <td>Full set (+Removal)</td>
+                <td></td>
+                <td><span class="price sm">160</span></td>
+                <td><span class="price sm">170</span></td>
+                <td><span class="price sm">180</span></td>
+              </tr>
+              <tr>
+                <td>Full set</td>
+                <td></td>
+                <td><span class="price sm">150</span></td>
+                <td><span class="price sm">160</span></td>
+                <td><span class="price sm">170</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 2w</td>
+                <td></td>
+                <td><span class="price sm">75</span></td>
+                <td><span class="price sm">85</span></td>
+                <td><span class="price sm">95</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 3w</td>
+                <td></td>
+                <td><span class="price sm">85</span></td>
+                <td><span class="price sm">95</span></td>
+                <td><span class="price sm">105</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 4w (half set)</td>
+                <td></td>
+                <td><span class="price sm">95</span></td>
+                <td><span class="price sm">105</span></td>
+                <td><span class="price sm">115</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 5w</td>
+                <td></td>
+                <td><span class="price sm">105</span></td>
+                <td><span class="price sm">115</span></td>
+                <td><span class="price sm">125</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 6w</td>
+                <td></td>
+                <td><span class="price sm">115</span></td>
+                <td><span class="price sm">125</span></td>
+                <td><span class="price sm">135</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th><strong class="goldy">8D Volume(premade)</strong></th>
+                <th>Apprentice</th><th>Junior</th><th>Senior</th><th>Director</th>
+              </tr>
+              <tr>
+                <td>Full set (+Removal)</td>
+                <td></td>
+                <td><span class="price sm">180</span></td>
+                <td><span class="price sm">190</span></td>
+                <td><span class="price sm">200</span></td>
+              </tr>
+              <tr>
+                <td>Full set</td>
+                <td></td>
+                <td><span class="price sm">170</span></td>
+                <td><span class="price sm">180</span></td>
+                <td><span class="price sm">190</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 2w</td>
+                <td></td>
+                <td><span class="price sm">85</span></td>
+                <td><span class="price sm">95</span></td>
+                <td><span class="price sm">105</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 3w</td>
+                <td></td>
+                <td><span class="price sm">95</span></td>
+                <td><span class="price sm">105</span></td>
+                <td><span class="price sm">115</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 4w (half set)</td>
+                <td></td>
+                <td><span class="price sm">105</span></td>
+                <td><span class="price sm">115</span></td>
+                <td><span class="price sm">125</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 5w</td>
+                <td></td>
+                <td><span class="price sm">115</span></td>
+                <td><span class="price sm">125</span></td>
+                <td><span class="price sm">135</span></td>
+              </tr>
+              <tr>
+                <td>Fill within 6w</td>
+                <td></td>
+                <td><span class="price sm">125</span></td>
+                <td><span class="price sm">135</span></td>
+                <td><span class="price sm">145</span></td>
+              </tr>
+            </table>
+          </div>
+          <div data-value="permanent-makeup" class="legacy">
+            <!-- PERMANENT MAKEUP -->
+            <h1 id="makeup"><strong class="goldy">Permanent Makeup</strong></h1>
+            <table class="bigTable">
+              <colgroup>
+                <col span="1" class="first">
+                <col span="1" class="second">
+              </colgroup>
+              <tr>
+                <td>Eyebrow Microblading</td>
+                <td><span class="price sm">500</span></td>
+              </tr>
+              <tr>
+                <td>Eyebrow 3D Powdery</td>
+                <td><span class="price sm">500</span></td>
+              </tr>
+              <tr>
+                <td>Combo Brows</td>
+                <td><span class="price sm">500</span></td>
+              </tr>
+              <tr>
+                <td>Eyelash Enhancement</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="subItem">Top or Bottom</td>
+                <td><span class="price sm">300</span></td>
+              </tr>
+              <tr>
+                <td class="subItem">Top and Bottom</td>
+                <td><span class="price sm">450</span></td>
+              </tr>
+              <tr>
+                <td>Eyeliner Tattoo</td>
+                <td><span class="price sm">350</span></td>
+              </tr>
+              <tr>
+                <td>First Touch Up</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyelash Enhancement</td>
+                <td><span class="price sm">30</span></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyebrows</td>
+                <td><span class="price">50-100</span></td>
+              </tr>
+              <tr>
+                <td>Second Touch Up (within 6 months)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyebrows</td>
+                <td><span class="price sm">100</span></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyeliner (Top or Bottom)</td>
+                <td><span class="price sm">50</span></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyeliner (Top and Bottom)</td>
+                <td><span class="price sm">70</span></td>
+              </tr>
+              <tr>
+                <td>Yearly Touch Up (within 2 years)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyebrows</td>
+                <td><span class="price sm">350</span></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyeliner (Top or Bottom)</td>
+                <td><span class="price sm">200</span></td>
+              </tr>
+              <tr>
+                <td class="subItem">Eyeliner (Top and Bottom)</td>
+                <td><span class="price sm">250</span></td>
+              </tr>
+            </table>
+          </div>
+          <div data-value="brows" class="legacy">
+            <!-- BROWS -->
+            <h1 id="brows"><strong class="goldy">Brows</strong></h1>
+            <table class="bigTable">
+              <colgroup>
+                <col span="1" class="first">
+                <col span="1" class="second">
+              </colgroup>
+              <tr><th>Other Services</th><th></th></tr>
+              <tr><td>Eyebrow Shaping</td>
+                <td><span class="price sm">15</span></td></tr>
+              <tr><td>Eyebrow Tint</td>
+                <td><span class="price sm">15</span></td></tr>
+              <tr><td>Eyebrow Cleanup</td>
+                <td><span class="price sm">15</span></td></tr>
+            </table>
+          </div>
+          <div data-value="facial" class="legacy">
+            <!-- JAPANESE FACIALS -->
+            <h1 id="facial"><strong class="goldy">Japanese Facials</strong></h1>
+            <table class="bigTable">
+              <tr>
+                <th>【Photo rejuvenation (IPL)】</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Photo rejuvenation Facial Treatment</td>
+                <td>70min</td>
+                <td><span class="price sm">75</span></td>
+              </tr>
+              <tr>
+                <td>Photo rejuvenation Facial Treatment + Face massage</td>
+                <td>90min</td>
+                <td><span class="price sm">95</span></td>
+              </tr>
+              <tr>
+                <td>Photo rejuvenation Facial Treatment + Face & Decollete Massage</td>
+                <td>110min</td>
+                <td><span class="price sm">105</span></td>
+              </tr>
+              <tr>
+                <td>Photo rejuvenation Facial Treatment + 20min Head massage</td>
+                <td>80min</td>
+                <td><span class="price sm">95</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th>【Anti Aging】</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Japanese Facial Anti aging treatment</td>
+                <td>90min</td>
+                <td><span class="price sm">90</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Facial Anti aging treatment + Decollete massage <strong style="color:red">Most popular!</strong></td>
+                <td>110min</td>
+                <td><span class="price sm">110</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Facial Anti aging treatment + 20 min Head Massage</td>
+                <td>105min</td>
+                <td><span class="price sm">110</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th>【Dry skin】</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Japanese Special Facial Treatment For Dry Skin</td>
+                <td>90min</td>
+                <td><span class="price sm">105</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Special Facial Treatment For Dry Skin + 20min Head Massage</td>
+                <td>110min</td>
+                <td><span class="price sm">125</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th>【Acne Care】</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Japanese Facial -Acne Care Treatment</td>
+                <td>45min</td>
+                <td><span class="price sm">70</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Facial -Acne Care Treatment + Face massage</td>
+                <td>60min</td>
+                <td><span class="price sm">90</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Facial -Acne Care Treatment + Face massage & Decollete Massage</td>
+                <td>90min</td>
+                <td><span class="price sm">100</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Facial -Acne Care Treatment + 20min Head massage</td>
+                <td>75min</td>
+                <td><span class="price sm">90</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th>【Simple Basic】</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Japanese Face massage</td>
+                <td>40min</td>
+                <td><span class="price sm">50</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Face massage and Decollete massage</td>
+                <td>60min</td>
+                <td><span class="price sm">70</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Face massage and Decollete massage + 20min Head massage</td>
+                <td>80min</td>
+                <td><span class="price sm">90</span></td>
+              </tr>
+              <tr>
+                <td>Japanese Face massage + 20min Head massage</td>
+                <td>60min</td>
+                <td><span class="price sm">70</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <tr>
+                <th>【Facial Other and Add-on】</th>
+                <th>Time</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Quick Nose Pore Cleaning with Vacuum</td>
+                <td>20min</td>
+                <td><span class="price sm">20</span></td>
+              </tr>
+              <tr>
+                <td>Quick Nose Pore Cleaning with Vacuum   (Add on Facial Treatment Menu) <strong style="color:red">We recommend!</strong></td>
+                <td>15min</td>
+                <td><span class="price sm">15</span></td>
+              </tr>
+              <tr>
+                <td>Lamella Mask (ADD-ON Facial Treatment Menu) <strong style="color:red">We recommend!</strong></td>
+                <td>10min</td>
+                <td><span class="price sm">10</span></td>
+              </tr>
+            </table>
+          </div>
+          <div data-value="massage" class="legacy">
+            <!-- JAPANESE HEAD MASSAGE -->
+            <h1 id="massage"><strong class="goldy">Japanese Head Massage</strong></h1>
+            <table class="bigTable">
+              <colgroup>
+                <col span="1" class="firstlong">
+                <col span="1" class="secondlong">
+              </colgroup>
+              <tr>
+                <th>20 Minutes</th>
+              </tr>
+              <tr>
+                <td>Includes aroma hot towel steaming, herbal scalp gel, and Japanese fruits tea</td>
+                <td><span class="price sm">30</span></td>
+              </tr>
+            </table>
+            <table class="bigTable">
+              <colgroup>
+                <col span="1" class="firstlong">
+                <col span="1" class="secondlong">
+              </colgroup>
+              <tr>
+                <th>40 Minutes</th>
+              </tr>
+              <tr>
+                <td>Includes aroma hot towel steaming, herbal scalp gel, and Japanese fruits tea</td>
+                <td><span class="price sm">60</span></td>
+              </tr>
+            </table>
+          </div>
+          
+          <!-- //// -->
         </div>
       </section>
     </main>

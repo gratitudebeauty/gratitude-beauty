@@ -7,7 +7,7 @@
 
 .gb-tab .tab-header .tab-item {
   padding: 8px 16px;
-  cursor: default;
+  cursor: pointer;
 }
 
 .gb-tab .tab-header .tab-item:hover {
@@ -24,4 +24,8 @@
 }
 .gb-tab .tab-body > *[selected] {
   display: block;
+}
+
+.gb-tab .tab-body > .legacy {
+  padding: 0 27px;
 }
