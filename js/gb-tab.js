@@ -28,14 +28,14 @@ function createTab(root)
   
   let curSlideStep = 0
   btnLeft.addEventListener('click', () => {
+    curSlideStep = Math.max(0, curSlideStep - 100)
+    slider.style.transform = `translateX(-${curSlideStep}px)`
+  })
+  btnRight.addEventListener('click', () => {
     const headerRect = headlist.getBoundingClientRect()
     const sliderRect = slider.getBoundingClientRect()
     const maxSlide = sliderRect.width - headerRect.width
     curSlideStep = Math.min(maxSlide, curSlideStep + 100)
-    slider.style.transform = `translateX(-${curSlideStep}px)`
-  })
-  btnRight.addEventListener('click', () => {
-    curSlideStep = Math.max(0, curSlideStep - 100)
     slider.style.transform = `translateX(-${curSlideStep}px)`
   })
 
